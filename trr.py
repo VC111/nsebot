@@ -10,7 +10,7 @@ from nselib.derivatives import nse_live_option_chain
 # ---------------- CONFIG ----------------
 SYMBOL = "NIFTY"
 POLL_INTERVAL_SECONDS = 15 * 60
-OI_THRESHOLD = 50_000
+OI_THRESHOLD = 50_0000
 STRIKE_OFFSET = 200
 STRIKE_RANGE = 250
 SIGNALS_CSV = Path("signals_log.csv")
@@ -250,3 +250,4 @@ if "worker_started" not in st.session_state:
     st.toast("✅ Background worker started", icon="🔄")
 
 st.caption("© 2025 Vinay Kumar | NIFTY OI Tool v3.0 (Compact + Monthly Fix)")
+
