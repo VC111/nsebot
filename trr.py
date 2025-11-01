@@ -69,7 +69,7 @@ def filter_atm_range(df, spot):
 
 
 def get_nearest_expiries(df):
-    """Return nearest weekly and monthly expiries (even across months)."""
+    """Return nearest weekly and nearest monthly expiries (even across months)."""
     if df.empty:
         return []
     all_exp = sorted(pd.to_datetime(df["Expiry_Date"].unique()))
@@ -250,4 +250,5 @@ if "worker_started" not in st.session_state:
     st.toast("✅ Background worker started", icon="🔄")
 
 st.caption("© 2025 Vinay Kumar | NIFTY OI Tool v3.0 (Compact + Monthly Fix)")
+
 
