@@ -1,4 +1,0 @@
-playwright>=1.30
-python-telegram-bot==13.15
-nselib
-pandas_market_calendars
